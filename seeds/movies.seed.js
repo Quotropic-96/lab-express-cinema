@@ -87,3 +87,4 @@ const { Mongoose } = require('mongoose');
 const { response } = require('../app');
 const Movie = require('../models/Movie.model');
 Movie.create(movies);
+// Unable to close connection here (?)
