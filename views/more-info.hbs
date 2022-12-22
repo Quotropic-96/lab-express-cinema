@@ -1,0 +1,20 @@
+<div id="more-info-container">
+    <div id="movie-img">
+        <img src="{{ this.image }}" alt="Movie image">
+    </div>
+    <div id="content">
+        <h1>{{ this.title }}</h1>
+        <p>{{ this.director }}</p>
+        <ul class="stars">
+            {{#each this.stars}}
+            <li>{{ this }}</li>
+            {{/each}}
+        </ul>
+        <p>{{ this.description }}</p>
+        <ul class="showtimes">
+            {{#each this.showtimes}}
+                <li>{{ this }}</li>
+            {{/each}}
+        </ul>
+    </div>
+</div>
